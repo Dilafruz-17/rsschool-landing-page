@@ -1,17 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Coffee House</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,400;0,600;1,600&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
-</head>
-
 <body>
     <header class="header">
         <a class="header__logo" href="index.html">
@@ -32,7 +18,71 @@
         <a class="header__menu-link" href="menu.html">Menu</a>
     </header>
 
+    <main>
+        <section class="hero">
+            <h1 class="hero__title"><em>Enjoy</em> premium coffee at our charming cafe</h1>
+            <p class="hero__text">We are inviting you to enjoy delicious coffee in a cozy atmosphere.</p>
+            <a class="button" href="menu.html">Menu</a>
+        </section>
+
+        <section class="favorite" id="favorite-coffee">
+            <h2 class="section-title">Choose your <em>favorite</em> coffee</h2>
+            <div class="slider">
+                <button class="slider__btn" type="button" aria-label="Previous slide">&#8249;</button>
+                <article class="slider__slide">
+                    <img src="assets/images/coffee-slider-1.png" alt="S'mores Frappuccino" width="300" height="400">
+                    <h3 class="slider__name">S'mores Frappuccino</h3>
+                    <p class="slider__text">This new drink takes an espresso and mixes it with brown sugar and cinnamon
+                        before being topped with oat milk.</p>
+                    <p class="slider__price">$5.50</p>
+                </article>
+                <button class="slider__btn" type="button" aria-label="Next slide">&#8250;</button>
+            </div>
+            <div class="slider__dots">
+                <span class="slider__dot slider__dot--active"></span>
+                <span class="slider__dot"></span>
+                <span class="slider__dot"></span>
+            </div>
+        </section>
+
+        <section class="about" id="about">
+            <h2 class="about__title">Resource is <em>the perfect and cozy place</em> where you can enjoy a variety of
+                hot beverages, relax, catch up with friends, or get some work done.</h2>
+            <div class="about__gallery">
+                <img src="assets/images/about-1.jpg" alt="Woman drinking coffee" width="400" height="300">
+                <img src="assets/images/about-2.jpg" alt="Cozy cafe with lights" width="400" height="300">
+                <img src="assets/images/about-3.jpg" alt="Man working in cafe" width="400" height="300">
+                <img src="assets/images/about-4.jpg" alt="Couple drinking coffee" width="400" height="300">
+            </div>
+        </section>
+
+        <section class="app" id="mobile-app">
+            <div class="app__info">
+                <h2 class="app__title"><em>Download</em> our app <br>to start ordering</h2>
+                <p class="app__text">Download the Resource app to order your favorite drinks in a few taps.</p>
+                <div class="app__buttons">
+                    <a class="button" href="#">App Store</a>
+                    <a class="button" href="#">Google Play</a>
+                </div>
+            </div>
+            <img class="app__image" src="assets/images/mobile-screens.png" alt="Resource mobile app screens" width="500"
+                height="500">
+        </section>
+    </main>
+
+    <footer class="footer" id="contact">
+        <div class="footer__slogan">
+            <p class="footer__title">Sip, Savor, Smile. <em>It's coffee time!</em></p>
+        </div>
+        <div class="footer__contacts">
+            <h2 class="footer__heading">Contact us</h2>
+            <ul>
+                <li>8529 Sunset Rd., LA</li>
+                <li>+1 (603) 555-0123</li>
+                <li>Mon-Sat: 9:00-22:00</li>
+            </ul>
+        </div>
+    </footer>
+
     <script src="js/script.js"></script>
 </body>
-
-</html>
