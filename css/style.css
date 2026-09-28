@@ -387,6 +387,107 @@ em {
     background-color: var(--color-text-primary);
 }
 
+.catalog .section-title {
+    max-width: 900px;
+    margin: 0 auto 40px;
+}
+
+.catalog__category-btn {
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+.catalog__category-btn:hover {
+    border-color: var(--color-text-accent);
+    color: var(--color-text-accent);
+}
+
+.catalog__category-btn--active:hover {
+    color: var(--color-text-inverse);
+}
+
+.catalog__grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.catalog__grid[hidden] {
+    display: none;
+}
+
+.catalog__card {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    border: 1px solid var(--color-border-primary);
+    border-radius: 24px;
+    transition: border-color 0.3s ease;
+}
+
+.catalog__card:hover {
+    border-color: var(--color-text-accent);
+}
+
+.catalog__card img {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 24px;
+    transition: transform 0.3s ease;
+}
+
+.catalog__card:hover img {
+    transform: scale(1.05);
+}
+
+.catalog__card-body {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    gap: 8px;
+    padding: 16px;
+}
+
+.catalog__card-name {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 1.3;
+}
+
+.catalog__card-text {
+    flex: 1;
+    margin: 0;
+    font-size: 13px;
+    line-height: 1.4;
+}
+
+.catalog__card-price {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.catalog__more {
+    display: none;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    margin: 32px auto 0;
+    border: 1px solid var(--color-border-primary);
+    border-radius: 50%;
+    background: transparent;
+    color: inherit;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+
+.catalog__more:hover {
+    background-color: var(--color-bg-container);
+    color: var(--color-text-inverse);
+}
+
 @media (max-width: 1024px) {
      .header {
         padding: 16px 24px;
@@ -467,4 +568,23 @@ em {
     }
 }
 
- 
+@media (max-width: 900px) {
+    .catalog__grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .catalog__grid.is-collapsed .catalog__card:nth-child(n + 5) {
+        display: none;
+    }
+    .catalog__more:not([hidden]) {
+        display: flex;
+    }
+}
+
+@media (max-width: 480px) {
+    .catalog__grid {
+        grid-template-columns: 1fr;
+    }
+}

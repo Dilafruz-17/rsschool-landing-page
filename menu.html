@@ -43,39 +43,212 @@
         </button>
     </header>
 
-        <main>
-            <section class="catalog">
-                <h1 class="section-title">Our <em>Menu</em></h1>
-        
-                <nav class="catalog__categories" aria-label="Menu categories">
-                    <ul class="catalog__categories-list">
-                        <li><button class="catalog__category-btn catalog__category-btn--active" type="button">Coffee</button>
-                        </li>
-                        <li><button class="catalog__category-btn" type="button">Tea</button></li>
-                        <li><button class="catalog__category-btn" type="button">Desserts</button></li>
-                    </ul>
-                </nav>
-        
-                <div class="catalog__grid">
-                    <article class="catalog__card">
-                        <img src="assets/images/coffee-slider-1.png" alt="S'mores Frappuccino" width="300" height="300">
-                        <h2 class="catalog__card-name">S'mores Frappuccino</h2>
-                        <p class="catalog__card-price">$5.50</p>
-                    </article>
-                    <article class="catalog__card">
-                        <img src="assets/images/coffee-slider-2.png" alt="Caramel Latte" width="300" height="300">
-                        <h2 class="catalog__card-name">Caramel Latte</h2>
-                        <p class="catalog__card-price">$4.80</p>
-                    </article>
-                    <article class="catalog__card">
-                        <img src="assets/images/coffee-slider-3.png" alt="Classic Cappuccino" width="300" height="300">
-                        <h2 class="catalog__card-name">Classic Cappuccino</h2>
-                        <p class="catalog__card-price">$4.20</p>
-                    </article>
-                </div>
-            </section>
-        </main>
-
+                <main>
+                    <section class="catalog">
+                        <h1 class="section-title">Behind each of our cups hides an <em>amazing surprise</em></h1>
+                
+                        <nav class="catalog__categories" aria-label="Menu categories">
+                            <ul class="catalog__categories-list">
+                                <li><button class="catalog__category-btn catalog__category-btn--active" type="button"
+                                        data-category="coffee" aria-pressed="true">Coffee</button></li>
+                                <li><button class="catalog__category-btn" type="button" data-category="tea"
+                                        aria-pressed="false">Tea</button></li>
+                                <li><button class="catalog__category-btn" type="button" data-category="dessert"
+                                        aria-pressed="false">Dessert</button></li>
+                            </ul>
+                        </nav>
+                
+                        <div class="catalog__grid is-collapsed" data-category="coffee">
+                            <article class="catalog__card">
+                                <img src="assets/images/bbdb6de375d8a88fd837459b2a22cb87ef45880e.jpg" alt="Irish coffee" width="300" height="300">
+                                <div class="catalog__card-body">
+                                    <h2 class="catalog__card-name">Irish coffee</h2>
+                                    <p class="catalog__card-text">Fragrant black coffee with Jameson Irish whiskey and whipped milk</p>
+                                    <p class="catalog__card-price">$7.00</p>
+                                </div>
+                            </article>
+                            <article class="catalog__card">
+                                <img src="assets/images/coffee-2.png" alt="Kahlua coffee" width="300" height="300">
+                                <div class="catalog__card-body">
+                                    <h2 class="catalog__card-name">Kahlua coffee</h2>
+                                    <p class="catalog__card-text">Classic coffee with milk and Kahlua liqueur under a cap of frothed
+                                        milk</p>
+                                    <p class="catalog__card-price">$7.00</p>
+                                </div>
+                            </article>
+                            <article class="catalog__card">
+                                <img src="assets/images/coffee-3.png" alt="Honey raf" width="300" height="300">
+                                <div class="catalog__card-body">
+                                    <h2 class="catalog__card-name">Honey raf</h2>
+                                    <p class="catalog__card-text">Espresso with frothed milk, cream and aromatic honey</p>
+                                    <p class="catalog__card-price">$5.50</p>
+                                </div>
+                            </article>
+                            <article class="catalog__card">
+                                <img src="assets/images/coffee-4.png" alt="Ice cappuccino" width="300" height="300">
+                                <div class="catalog__card-body">
+                                    <h2 class="catalog__card-name">Ice cappuccino</h2>
+                                    <p class="catalog__card-text">Cappuccino with soft thick foam in summer version with ice</p>
+                                    <p class="catalog__card-price">$5.00</p>
+                                </div>
+                            </article>
+                            <article class="catalog__card">
+                                <img src="assets/images/coffee-5.png" alt="Espresso" width="300" height="300">
+                                <div class="catalog__card-body">
+                                    <h2 class="catalog__card-name">Espresso</h2>
+                                    <p class="catalog__card-text">Classic black coffee</p>
+                                    <p class="catalog__card-price">$4.50</p>
+                                </div>
+                            </article>
+                            <article class="catalog__card">
+                                <img src="assets/images/coffee-6.png" alt="Latte" width="300" height="300">
+                                <div class="catalog__card-body">
+                                    <h2 class="catalog__card-name">Latte</h2>
+                                    <p class="catalog__card-text">Espresso coffee with the addition of steamed milk and dense milk foam
+                                    </p>
+                                    <p class="catalog__card-price">$5.50</p>
+                                </div>
+                            </article>
+                            <article class="catalog__card">
+                                <img src="assets/images/coffee-7.png" alt="Latte macchiato" width="300" height="300">
+                                <div class="catalog__card-body">
+                                    <h2 class="catalog__card-name">Latte macchiato</h2>
+                                    <p class="catalog__card-text">Espresso with frothed milk and chocolate</p>
+                                    <p class="catalog__card-price">$5.50</p>
+                                </div>
+                            </article>
+                            <article class="catalog__card">
+                                <img src="assets/images/coffee-8.png" alt="Coffee with cognac" width="300" height="300">
+                                <div class="catalog__card-body">
+                                    <h2 class="catalog__card-name">Coffee with cognac</h2>
+                                    <p class="catalog__card-text">Fragrant black coffee with cognac and whipped cream</p>
+                                    <p class="catalog__card-price">$6.50</p>
+                                </div>
+                            </article>
+                        </div>
+                
+                        <div class="catalog__grid" data-category="tea" hidden>
+                            <article class="catalog__card">
+                                <img src="assets/images/tea-1.png" alt="Moroccan tea" width="300" height="300" loading="lazy">
+                                <div class="catalog__card-body">
+                                    <h2 class="catalog__card-name">Moroccan</h2>
+                                    <p class="catalog__card-text">Fragrant black tea with the addition of tangerine, cinnamon, honey,
+                                        lemon and mint</p>
+                                    <p class="catalog__card-price">$4.50</p>
+                                </div>
+                            </article>
+                            <article class="catalog__card">
+                                <img src="assets/images/tea-2.png" alt="Ginger tea" width="300" height="300" loading="lazy">
+                                <div class="catalog__card-body">
+                                    <h2 class="catalog__card-name">Ginger</h2>
+                                    <p class="catalog__card-text">Original black tea with fresh ginger, lemon and honey</p>
+                                    <p class="catalog__card-price">$5.00</p>
+                                </div>
+                            </article>
+                            <article class="catalog__card">
+                                <img src="assets/images/tea-3.png" alt="Cranberry tea" width="300" height="300" loading="lazy">
+                                <div class="catalog__card-body">
+                                    <h2 class="catalog__card-name">Cranberry</h2>
+                                    <p class="catalog__card-text">Invigorating black tea with cranberry and honey</p>
+                                    <p class="catalog__card-price">$5.00</p>
+                                </div>
+                            </article>
+                            <article class="catalog__card">
+                                <img src="assets/images/tea-4.png" alt="Sea buckthorn tea" width="300" height="300" loading="lazy">
+                                <div class="catalog__card-body">
+                                    <h2 class="catalog__card-name">Sea buckthorn</h2>
+                                    <p class="catalog__card-text">Toning sweet black tea with sea buckthorn, fresh thyme and cinnamon
+                                    </p>
+                                    <p class="catalog__card-price">$5.50</p>
+                                </div>
+                            </article>
+                        </div>
+                
+                        <div class="catalog__grid is-collapsed" data-category="dessert" hidden>
+                            <article class="catalog__card">
+                                <img src="assets/images/dessert-1.png" alt="Marble cheesecake" width="300" height="300"
+                                    loading="lazy">
+                                <div class="catalog__card-body">
+                                    <h2 class="catalog__card-name">Marble cheesecake</h2>
+                                    <p class="catalog__card-text">Philadelphia cheese with lemon zest on a light sponge cake and red
+                                        currant jam</p>
+                                    <p class="catalog__card-price">$3.50</p>
+                                </div>
+                            </article>
+                            <article class="catalog__card">
+                                <img src="assets/images/dessert-2.png" alt="Red velvet cake" width="300" height="300"
+                                    loading="lazy">
+                                <div class="catalog__card-body">
+                                    <h2 class="catalog__card-name">Red velvet</h2>
+                                    <p class="catalog__card-text">Layer cake with cream cheese frosting</p>
+                                    <p class="catalog__card-price">$4.00</p>
+                                </div>
+                            </article>
+                            <article class="catalog__card">
+                                <img src="assets/images/dessert-3.png" alt="Cheesecakes with berries" width="300" height="300"
+                                    loading="lazy">
+                                <div class="catalog__card-body">
+                                    <h2 class="catalog__card-name">Cheesecakes</h2>
+                                    <p class="catalog__card-text">Soft cottage cheese pancakes with sour cream and fresh berries and
+                                        sprinkled with powdered sugar</p>
+                                    <p class="catalog__card-price">$4.50</p>
+                                </div>
+                            </article>
+                            <article class="catalog__card">
+                                <img src="assets/images/dessert-4.png" alt="Creme brulee" width="300" height="300" loading="lazy">
+                                <div class="catalog__card-body">
+                                    <h2 class="catalog__card-name">Creme brulee</h2>
+                                    <p class="catalog__card-text">Delicate creamy dessert in a caramel basket with wild berries</p>
+                                    <p class="catalog__card-price">$4.00</p>
+                                </div>
+                            </article>
+                            <article class="catalog__card">
+                                <img src="assets/images/dessert-5.png" alt="Pancakes with strawberries" width="300" height="300"
+                                    loading="lazy">
+                                <div class="catalog__card-body">
+                                    <h2 class="catalog__card-name">Pancakes</h2>
+                                    <p class="catalog__card-text">Tender pancakes with strawberry jam and fresh strawberries</p>
+                                    <p class="catalog__card-price">$4.50</p>
+                                </div>
+                            </article>
+                            <article class="catalog__card">
+                                <img src="assets/images/dessert-6.png" alt="Honey cake" width="300" height="300" loading="lazy">
+                                <div class="catalog__card-body">
+                                    <h2 class="catalog__card-name">Honey cake</h2>
+                                    <p class="catalog__card-text">Classic honey cake with delicate custard</p>
+                                    <p class="catalog__card-price">$4.50</p>
+                                </div>
+                            </article>
+                            <article class="catalog__card">
+                                <img src="assets/images/dessert-7.png" alt="Chocolate cake" width="300" height="300"
+                                    loading="lazy">
+                                <div class="catalog__card-body">
+                                    <h2 class="catalog__card-name">Chocolate cake</h2>
+                                    <p class="catalog__card-text">Cake with hot chocolate filling and nuts with dried apricots</p>
+                                    <p class="catalog__card-price">$5.50</p>
+                                </div>
+                            </article>
+                            <article class="catalog__card">
+                                <img src="assets/images/dessert-8.png" alt="Black forest cake" width="300" height="300"
+                                    loading="lazy">
+                                <div class="catalog__card-body">
+                                    <h2 class="catalog__card-name">Black forest</h2>
+                                    <p class="catalog__card-text">A combination of thin sponge cake with cherry jam and light chocolate
+                                        mousse</p>
+                                    <p class="catalog__card-price">$6.50</p>
+                                </div>
+                            </article>
+                        </div>
+                
+                        <button class="catalog__more" type="button" aria-label="Load more">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+                                stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                                <path d="M20 12a8 8 0 1 1-2.6-5.9" />
+                                <path d="M20 4v5h-5" />
+                            </svg>
+                        </button>
+                    </section>
+                </main>
         <footer class="footer" id="contact">
             <div class="footer__slogan">
                 <p class="footer__title">Sip, Savor, Smile. <em>It's coffee time!</em></p>
